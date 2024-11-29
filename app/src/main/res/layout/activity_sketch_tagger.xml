@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cce0ee"
+    tools:context=".SketchTaggerActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border">
+        <com.example.finalproject.DrawingView
+            android:id="@+id/drawingArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="getTags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tags:"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+
+        <EditText
+            android:id="@+id/setTags"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="clearDrawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="saveDrawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="findDrawings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Find"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+
+        <EditText
+            android:id="@+id/tagsQuery"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#7fb2d4" />
+
+</LinearLayout>

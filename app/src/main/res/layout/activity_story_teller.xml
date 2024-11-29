@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StoryTellerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story Board"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="findImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Find"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+
+        <EditText
+            android:id="@+id/tagsQuery"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:onClick="toggleCheckbox"
+            android:id="@+id/sketchesCheckbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include sketches" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/selectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/story"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="getStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Story"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7fb2d4" />
+    </LinearLayout>
+
+</LinearLayout>

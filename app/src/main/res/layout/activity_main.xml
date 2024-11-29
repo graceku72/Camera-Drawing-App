@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fall_wallpaper"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="navigateToPhotoTagger"
+        android:id="@+id/photoTaggerButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:text="Photo Tagger"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#c76f25" />
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="navigatetoSketchTagger"
+        android:id="@+id/sketchTaggerButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:text="Sketch Tagger"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#c76f25" />
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="navigatetoStoryTeller"
+        android:id="@+id/storyTellerButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:text="Story Teller"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#c76f25" />
+
+</LinearLayout>
